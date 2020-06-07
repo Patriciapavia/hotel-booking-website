@@ -303,3 +303,39 @@ section {
 .rating {
   color: #fa9e2c;
 }
+
+/* offer sectiong */
+
+.offer {
+  background: linear-gradient(
+      to right,
+      rgba(250, 158, 44, 0.8),
+      rgba(143, 80, 251, 0.8)
+    ),
+    url("hotel3.jpeg") bottom center no-repeat;
+  background-size: cover;
+}
+
+.offer-content {
+  background-color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.discount {
+  background-color: #fa9e2c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  text-transform: uppercase;
+  outline: 2px solid #fa9e2c;
+  outline-offset: 0.5rem;
+  font-weight: bold;
+}
+
+.paragraph {
+  color: #a5a5a5;
+  margin-bottom: 2.5rem;
+}
