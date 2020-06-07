@@ -63,6 +63,24 @@ section {
   margin-top: 2.5rem;
   cursor: pointer;
 }
+.btn-gradient {
+  background-image: linear-gradient(to right, #79114a, orange);
+}
+.btn-gradient:hover {
+  background-image: linear-gradient(to right, orange, #79114a);
+}
+
+.dots {
+  font-size: 2.4rem;
+  margin-left: 0.5rem;
+  opacity: 0.75;
+}
+.btn-purple {
+  background-color: #350a4f;
+}
+.btn-purple:hover {
+  background-color: #56246f;
+}
 
 /* header */
 
@@ -189,18 +207,6 @@ section {
   display: inline-flex;
   align-items: center;
 }
-.btn-gradient {
-  background-image: linear-gradient(to right, #79114a, orange);
-}
-.btn-gradient:hover {
-  background-image: linear-gradient(to right, orange, #79114a);
-}
-
-.dots {
-  font-size: 2.4rem;
-  margin-left: 0.5rem;
-  opacity: 0.75;
-}
 
 /* booking section */
 .booking {
@@ -229,9 +235,52 @@ section {
   /*resize: none; */
 }
 
-.btn-purple {
-  background-color: #350a4f;
+/* feature hotel */
+
+.section-head {
+  text-align: center;
+  margin-bottom: 5rem;
 }
-.btn-purple:hover {
-  background-color: #56246f;
+
+.heading {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.sub-heading {
+  font-size: 1.7rem;
+  font-family: "Lobster", cursive, sans-serif;
+  font-weight: 300;
+  color: #a5a5a5;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2.5rem;
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-hotels {
+  height: 35rem;
+  color: #ffffff;
+  padding: 1rem;
+  position: relative;
+  z-index: 0;
+}
+.featured-hotels::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 10, 79, 0.5);
+  z-index: -1;
+}
+.hotel-img {
+  width: 100%;
 }
